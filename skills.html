@@ -8,28 +8,42 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="bg-overlay"></div>
 
-  <!-- Header Navigation -->
-  <header class="header-nav">
-    <div class="nav-container">
-      <a href="index.html" class="logo-link">Iffat Fatima</a>
-      <nav aria-label="Main Navigation">
-        <ul class="nav-menu">
-          <li class="nav-item"><a href="index.html">Home</a></li>
-          <li class="nav-item"><a href="about.html">About</a></li>
-          <li class="nav-item"><a href="experience.html">Experience</a></li>
-          <li class="nav-item"><a href="projects.html">Projects</a></li>
-          <li class="nav-item"><a href="skills.html">Skills</a></li>
-          <li class="nav-item"><a href="publications.html">Publications</a></li>
-          <li><button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">🌙</button></li>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main Navigation">
+    <div class="container">
+      <!-- Logo/Brand Link -->
+      <a href="index.html" class="navbar-brand logo-link fw-bold">Iffat Fatima</a>
+      
+      <!-- Mobile Hamburger Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#portfolioNav" aria-controls="portfolioNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Collapsible Navigation Menu -->
+      <div class="collapse navbar-collapse" id="portfolioNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+          
+          <!-- Theme Toggle Button Wrapper -->
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <button class="btn btn-outline-light theme-toggle-btn px-2 py-1" id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
-  </header>
+  </nav>
+</header>
 
   <!-- Main Content -->
   <main>
@@ -94,6 +108,8 @@
   <footer>
     <p>&copy; 2026 Iffat Fatima. All rights reserved.</p>
   </footer>
+  <!-- Bootstrap 5 JS Bundle (Required for Navbar Toggle) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script src="script.js"></script>
 </body>
