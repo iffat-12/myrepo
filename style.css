@@ -9,30 +9,6 @@
   /* Font Family */
   --font-sans: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
-  /* CSS Variables for Light Mode (Default) */
-  --bg-color: #f1f5f9; /* Soft grey-blue */
-  --bg-card: rgba(255, 255, 255, 0.85); /* Semi-transparent for blur effect */
-  --bg-nav: rgba(241, 245, 249, 0.9);
-  --text-primary: #1e293b; /* Dark slate */
-  --text-secondary: #475569; /* Muted grey-blue */
-  
-  --primary-color: #3b82f6; /* Modern Blue */
-  --primary-hover: #2563eb;
-  
-  --accent-color: #f472b6; /* Soft Rose/Girly Pink */
-  --accent-light: #fbcfe8;
-  --accent-hover: #db2777;
-
-  --border-color: rgba(226, 232, 240, 0.8);
-  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  
-  --backdrop-blur: 12px;
-}
-
-/* Dark Mode Variables */
-[data-theme="dark"] {
   --bg-color: #0f172a; /* Deep slate */
   --bg-card: rgba(30, 41, 59, 0.85);
   --bg-nav: rgba(15, 23, 42, 0.9);
@@ -42,7 +18,7 @@
   --primary-color: #60a5fa;
   --primary-hover: #3b82f6;
   
-  --accent-color: #f472b6;
+  --accent-color: #f472b6; /* Soft Rose/Girly Pink */
   --accent-light: rgba(244, 114, 182, 0.2);
   --accent-hover: #f43f5e;
 
@@ -50,6 +26,29 @@
   --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+  
+  --backdrop-blur: 12px;
+}
+
+/* Light Mode Variables (Triggered via data attribute) */
+[data-theme="light"] {
+  --bg-color: #f1f5f9; /* Soft grey-blue */
+  --bg-card: rgba(255, 255, 255, 0.85); /* Semi-transparent for blur effect */
+  --bg-nav: rgba(241, 245, 249, 0.9);
+  --text-primary: #1e293b; /* Dark slate */
+  --text-secondary: #475569; /* Muted grey-blue */
+  
+  --primary-color: #3b82f6; /* Modern Blue */
+  --primary-hover: #2563eb;
+  
+  --accent-color: #f472b6;
+  --accent-light: #fbcfe8;
+  --accent-hover: #db2777;
+
+  --border-color: rgba(226, 232, 240, 0.8);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
 /* Global Reset & Base Styles */
